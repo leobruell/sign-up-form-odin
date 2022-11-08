@@ -16,6 +16,8 @@ body{
     background-image: url('images/ferns.avif');
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -34,12 +36,21 @@ body{
     background: rgba(0,0,0, 0.5);
     height: max(17vh, 90px);
 }
-.odin-banner{
-    height: 15vh;
-}
 
 .above-odin{
     height: 20vh;
+}
+
+.below-odin{
+    height: 71vh;
+}
+
+.fern-credit{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: .5;
+    font-size: max(1.5vh, 8px);
+
 }
 
 .my-form{
@@ -56,4 +67,14 @@ body{
     font-weight: bold;
     font-size: 1.2rem;
     width: max(40vw, 600px);
+}
+
+.first-name, .last-name, .email, .phone, .pass-one, .pass-two{
+    display: flex;
+    flex-direction: column;
+}
+.name, .contact-info, .password{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
