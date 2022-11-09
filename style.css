@@ -12,7 +12,7 @@ body{
 
 .fern{
     height: 100vh;
-    width: max(30vw, 400px);
+    width: max(30vw, 500px);
     background-image: url('images/ferns.avif');
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,19 +54,22 @@ body{
 }
 
 .my-form{
-    background-color: white;
+    background-color: whitesmoke;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    justify-content: flex-start;
     width: max(45vw,650px);
 }
-.upper-text p{
+.upper-text {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
     width: max(40vw, 600px);
+    margin-left: 40px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .first-name, .last-name, .email, .phone, .pass-one, .pass-two{
@@ -76,5 +79,61 @@ body{
 .name, .contact-info, .password{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-around; */
+}
+
+.form-inputs{
+    height: max(200px, 30vh);
+    width: max(45vw,650px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(88, 75, 75);
+    font-weight: bold;
+}
+
+input{
+    border-radius: 5px;
+    border-color: rgb(174, 159, 159);
+    border-width: 1px;
+    border-style: solid;
+}
+
+input:focus{
+    border-color: blue;
+    border-width: 1px;
+    box-shadow: 2px 2px 5px lightblue;
+    border-style: solid;
+    outline: none
+
+}
+
+
+.form-inputs label{
+    font-size: .8rem;
+}
+
+.phone, .last-name, .pass-two {
+    margin-left: 70px;
+}
+
+.first-name, .email, .pass-one {
+    margin-left: 40px;
+}
+legend{
+    margin-left: 40px;
+}
+
+.submit-button{
+    background-color: rgb(80, 119, 80);
+    border-radius: 5px;
+    height: 40px;
+    width: 170px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40px;
+    margin-top: 20px;
 }
