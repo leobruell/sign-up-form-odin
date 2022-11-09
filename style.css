@@ -12,7 +12,7 @@ body{
 
 .fern{
     height: 100vh;
-    width: max(30vw, 500px);
+    width: 30vw;
     background-image: url('images/ferns.avif');
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,18 +23,19 @@ body{
 
 
 .odin{
-    height: max(14vh, 80px);
+    height: 14vh;
 }
 
 .odin-banner{
     display: flex;
     font-family: Norse;
     color: white;
-    font-size: max(12vh,50px);
+    font-size: 12vh;
     align-items: center;
     justify-content: center;
     background: rgba(0,0,0, 0.5);
-    height: max(17vh, 90px);
+    height: 17vh;
+    flex-shrink: 0;
 }
 
 .above-odin{
@@ -60,13 +61,14 @@ body{
     flex-direction: column;
     /* align-items: center; */
     justify-content: flex-start;
-    width: max(45vw,650px);
+    width: 45vw;
+    flex-shrink: 0;
 }
 .upper-text {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
-    width: max(40vw, 600px);
+    width: 40vw;
     margin-left: 40px;
     margin-top: 60px;
     margin-bottom: 30px;
@@ -83,8 +85,8 @@ body{
 }
 
 .form-inputs{
-    height: max(200px, 30vh);
-    width: max(45vw,650px);
+    height: 30vh;
+    width: 45vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -92,6 +94,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(88, 75, 75);
     font-weight: bold;
+    flex-wrap: wrap;
 }
 
 input{
